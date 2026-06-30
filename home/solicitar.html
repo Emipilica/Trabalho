@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Cartas & Memórias</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="solicitar.html">Solicitar Carta</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                    <section class="solicitacao">
+                        <h2>Solicite sua Carta</h2>
+                        <p>
+                            Permita que eu transforme seus sentimentos em palavras.
+                            Conte-nos sua história e criaremos uma carta única para você.
+                        </p>
+                        <form id="formCarta">
+                            <label for="nome">Seu nome</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome">
+                            <label for="destinatario">Nome do destinatário</label>
+                            <input type="text" id="destinatario" placeholder="Para quem será a carta?">
+                            <label for="endereco">Endereço do destinatário</label>
+                            <input type="text" id="endereco" placeholder="Rua, número, cidade e CEP">
+                            <label for="tipo">Tipo da carta</label>
+                            <select id="tipo">
+                                <option>Declaração de Amor</option>
+                                <option>Agradecimento</option>
+                                <option>Pedido de Perdão</option>
+                                <option>Despedida</option>
+                                <option>Amizade</option>
+                                <option>Outro</option>
+                            </select>
+                            <label for="historia">
+                                Conte um pouco da sua história
+                            </label>
+                            <textarea id="historia" rows="10"
+                            placeholder="Escreva aqui quem é essa pessoa, o que você sente e qual mensagem deseja transmitir...">
+                            </textarea>
+                            <button type="submit">
+                                Enviar Solicitação
+                            </button>
+                        </form>
+                        <p id="mensagem"></p>
+                    </section>
+            </article>
+        </main>
+        <footer>
+            <p class="footer-text">
+                "Toda emoção merece ser compreendida. Toda história merece ser contada."
+                <br>Violet Evergarden Cartas & Memórias © 2026
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

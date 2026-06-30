@@ -154,6 +154,187 @@ aside:hover{
     transition: 0.3s;
 }
 
+/* Seção da solicitação */
+
+.solicitacao{
+
+    background: white;
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:12px;
+
+    box-shadow:none;
+
+}
+
+.solicitacao h2{
+
+    color:#8b6a42;
+
+    margin-bottom:15px;
+
+}
+
+.solicitacao p{
+
+    margin-bottom:10px;
+
+}
+
+form{
+
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction:column;
+
+}
+
+label{
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    color:#5c4328;
+
+}
+
+input,
+select,
+textarea{
+
+    padding:12px;
+
+    border:1px solid #d9b26f;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-family:Georgia, serif;
+
+    background:#fffdf9;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:200px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border:2px solid #f3d094;
+
+}
+
+button{
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#d9b26f;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#b88f4a;
+
+}
+
+/* Interação com a mensagem de sucesso */
+
+#mensagem{
+    margin-top:20px;
+    padding:15px;
+    display:none;
+    text-align:center;
+    color:#2e7d32;
+    background:#eef8ee;
+    border:1px solid #2e7d32;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* Depoimentos */
+.introducao{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.introducao h2{
+    color: #8b6a42;
+    margin-bottom: 15px;
+}
+.depoimentos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+.depoimento{
+    background: #fffdf8;
+    padding: 25px;
+    border-left: 5px solid #d9b26f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    transition: .3s;
+}
+.depoimento:hover{
+    transform: translateY(-5px);
+}
+.depoimento p{
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.depoimento h3{
+    text-align: right;
+    color: #8b6a42;
+    font-size: 1rem;
+}
+.voltar{
+    text-align: center;
+    margin-top: 40px;
+}
+.voltar a{
+    text-decoration: none;
+    background: #d9b26f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.voltar a:hover{
+    background: #b88f4a;
+}
+
 /* Responsividade */
 @media (max-width: 768px){
 
