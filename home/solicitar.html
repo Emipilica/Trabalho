@@ -29,13 +29,15 @@
                         </p>
                         <form id="formCarta">
                             <label for="nome">Seu nome</label>
-                            <input type="text" id="nome" placeholder="Digite seu nome">
+                            <input type="text" id="nome" required placeholder="Digite seu nome">
+                            <label for="email">E-mail para contato</label>
+                            <input type="email" id="email" required placeholder="seuemail@email.com">
                             <label for="destinatario">Nome do destinatário</label>
-                            <input type="text" id="destinatario" placeholder="Para quem será a carta?">
+                            <input type="text" id="destinatario" required placeholder="Para quem será a carta?">
                             <label for="endereco">Endereço do destinatário</label>
-                            <input type="text" id="endereco" placeholder="Rua, número, cidade e CEP">
+                            <input type="text" id="endereco" required placeholder="Rua, número, cidade e CEP">
                             <label for="tipo">Tipo da carta</label>
-                            <select id="tipo">
+                            <select id="tipo" required>
                                 <option>Declaração de Amor</option>
                                 <option>Agradecimento</option>
                                 <option>Pedido de Perdão</option>
@@ -43,7 +45,7 @@
                                 <option>Amizade</option>
                                 <option>Outro</option>
                             </select>
-                            <label for="historia">
+                            <label for="historia" required>
                                 Conte um pouco da sua história
                             </label>
                             <textarea id="historia" rows="10"
