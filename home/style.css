@@ -135,14 +135,42 @@ p{
 
 /* Rodapé */
 footer{
-    text-align:center;
-    background-color:#f3d094;
-    padding:15px;
-    border-top:1px solid #d9b26f;
-    color:#5c4328;
+    background:#f3d094;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:35px;
+    border-top:2px solid #d9b26f;
 }
-.footer-text{
-    margin:0;
+.footer-coluna{
+    width:250px;
+    margin:15px;
+}
+.footer-coluna h3{
+    color:#5c4328;
+    margin-bottom:15px;
+}
+.footer-coluna ul{
+    list-style:none;
+}
+.footer-coluna li{
+    margin-bottom:8px;
+}
+.footer-coluna a{
+    text-decoration:none;
+    color:#4a3b2f;
+    transition:.3s;
+}
+.footer-coluna a:hover{
+    color:white;
+}
+.copyright{
+    background:#e5bf7a;
+    text-align:center;
+    padding:15px;
+}
+.copyright p{
+    margin:5px;
 }
 /* Efeito ao passar o mouse */
 article:hover{
@@ -156,117 +184,67 @@ aside:hover{
 /* Seção da solicitação */
 
 .solicitacao{
-
     background: white;
     padding:20px;
-
     margin-top:20px;
-
     border-radius:12px;
-
     box-shadow:none;
-
 }
-
 .solicitacao h2{
-
     color:#8b6a42;
-
     margin-bottom:15px;
-
 }
-
 .solicitacao p{
-
     margin-bottom:10px;
-
 }
-
 form{
-
     margin: 0;
     padding: 0;
     display:flex;
     flex-direction:column;
-
 }
 
 label{
-
     font-weight:bold;
-
     margin-top:15px;
-
     margin-bottom:8px;
-
     color:#5c4328;
-
 }
 
 input,
 select,
 textarea{
-
     padding:12px;
-
     border:1px solid #d9b26f;
-
     border-radius:8px;
-
     font-size:16px;
-
     font-family:Georgia, serif;
-
     background:#fffdf9;
-
 }
-
 textarea{
-
     resize:vertical;
-
     min-height:200px;
-
 }
-
 input:focus,
 select:focus,
 textarea:focus{
-
     outline:none;
-
     border:2px solid #f3d094;
-
 }
-
 button{
-
     margin-top:25px;
-
     padding:15px;
-
     border:none;
-
     border-radius:8px;
-
     background:#d9b26f;
-
     color:white;
-
     font-size:18px;
-
     font-weight:bold;
-
     cursor:pointer;
-
     transition:.3s;
-
 }
-
 button:hover{
-
     background:#b88f4a;
-
 }
 
 /* Interação com a mensagem de sucesso */
