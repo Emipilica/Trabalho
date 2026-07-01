@@ -136,15 +136,18 @@ p{
 /* Rodapé */
 footer{
     background:#f3d094;
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    padding:35px;
     border-top:2px solid #d9b26f;
+    padding:30px;
+}
+
+.footer-conteudo{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
 }
 .footer-coluna{
-    width:250px;
-    margin:15px;
+    width:220px;
 }
 .footer-coluna h3{
     color:#5c4328;
@@ -152,6 +155,7 @@ footer{
 }
 .footer-coluna ul{
     list-style:none;
+    padding:0;
 }
 .footer-coluna li{
     margin-bottom:8px;
@@ -159,18 +163,18 @@ footer{
 .footer-coluna a{
     text-decoration:none;
     color:#4a3b2f;
-    transition:.3s;
 }
 .footer-coluna a:hover{
     color:white;
 }
-.copyright{
-    background:#e5bf7a;
-    text-align:center;
-    padding:15px;
+hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #d9b26f;
 }
 .copyright p{
-    margin:5px;
+    margin:5px 0;
+    text-align:center;
 }
 /* Efeito ao passar o mouse */
 article:hover{
@@ -314,23 +318,18 @@ button:hover{
 
 /* Responsividade */
 @media(max-width:768px){
-
     header h1{
         font-size:2rem;
     }
-
     main{
         flex-direction:column;
     }
-
     article,
     aside{
         width:100%;
         padding:20px;
     }
-
     p{
         font-size:1rem;
     }
-
 }
